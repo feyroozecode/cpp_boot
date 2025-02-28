@@ -10,7 +10,16 @@ int fibonacci(int n ){
     if(n <=1 ){
         return n;
     }
-    return fibonacci(n-1) + fibonacci(n-2);
+    int first = 0;
+    int second = 1;
+    int next;
+
+    for(int i = 2; i <= n; ++i){
+        next = first + second;
+        first = second;
+        second = next;
+    }
+    return next;
 }
 
 
@@ -38,7 +47,7 @@ int main(){
     do {
         cout << fibonacci(i) << " ";
         i++;
-    } while (i <= n);    
+    } while (i < n);    
     
 
     return 0;
