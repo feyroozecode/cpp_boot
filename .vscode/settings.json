@@ -1,3 +1,7 @@
 {
-    "editor.screenReaderAnnounceInlineSuggestion": false
+    "editor.screenReaderAnnounceInlineSuggestion": false,
+    "files.associations": {
+        "cmath": "cpp",
+        "ios": "cpp"
+    }
 }
