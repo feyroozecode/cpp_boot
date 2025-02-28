@@ -1,1 +1,1 @@
-Just Learning Cpp with som algorithms daily 
+Just Learning Cpp with some algorithms daily 
