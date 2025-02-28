@@ -16,7 +16,7 @@ int main(){
     {
         
         // show the program
-        cout << "Enter your option for start : \n1: Add: \n2: Substraction: \n3:Multiply: \n4: Divide: \n:";
+        cout << "Enter your option for start : \n1: Add: \n2: Substraction: \n3:Multiply: \n4: Divide:\n Modulo: \n:";
         int choice;
         cin>> choice;
 
@@ -35,10 +35,11 @@ int main(){
                 result = a-b;
                 cout << "The result of minus " << a << " - " << b << " = " << result;
             break;
+            case 3:
                 result = a*b;
                 cout << "The result of  " << a << " * " << b << " = " << result;
                 break;
-            case 3: 
+            case 4: 
                 try
                 {
                 result = a/b;
@@ -50,12 +51,16 @@ int main(){
                     return 1;
                 }
                 break;
+            case 5:
+                result = a%b;
+                cout << "The result of  " << a << " % " << b << " = " << result;
+                break;    
         default:
-                cout << "Error , please choose good operation betwen 1 to 4" ;
+                cout << "Error , please choose good operation betwen 1 to 6\n" ;
             break;
         }
 
-     cout << "You when to continue (Y/N)";
+     cout << "\nYou when to continue (Y/N)";
      char u_response ;
      cin>> u_response;
      if(u_response == 'N'){
